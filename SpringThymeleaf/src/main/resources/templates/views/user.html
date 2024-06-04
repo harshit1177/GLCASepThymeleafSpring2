@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html  lang = "en"  
+       xmlns:th= "http://www.thymeleaf.org"
+>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  
+   
+   
+     <h1> Using Selection Expression  </h1>
+   <div th:object="${userAttribute1}">
+        
+       <p> User details are as follows: </p>
+       <p> Name: <strong th:text = "*{name}"></strong></p>
+       <p> Email: <strong th:text = "*{email}"></strong></p>
+       <p> Age : <strong th:text = "*{age}"></strong></p>
+     
+   </div>
+   
+   
+</body>
+</html>

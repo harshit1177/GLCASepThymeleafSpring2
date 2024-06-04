@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>List of Users</title>
+</head>
+<body>
+	<h1>Iterations</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="obj: ${userAttribute3}">
+				<td th:text="${obj.name}"></td>
+				<td th:text="${obj.email}"></td>
+				<td th:text="${obj.age}"></td>
+			</tr>
+		</tbody>
+
+	</table>
+
+
+
+</body>
+</html>
